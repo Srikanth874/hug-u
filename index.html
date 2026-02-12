@@ -7,7 +7,6 @@
 <style>
 body{
   margin:0;
-  overflow:hidden;
   font-family:'Segoe UI',sans-serif;
 }
 
@@ -34,6 +33,9 @@ body{
   position:absolute;
   top:100%;
   left:0;
+  padding:40px 20px;
+  box-sizing:border-box;
+  overflow-y:auto;
 }
 
 /* Hug Animation */
@@ -91,10 +93,11 @@ button:hover{
 
 /* Message */
 .message{
-  max-width:320px;
+  max-width:400px;
   text-align:center;
-  font-size:18px;
-  line-height:1.6;
+  font-size:17px;
+  line-height:1.8;
+  margin:auto;
   opacity:0;
   animation:fadeText 2s forwards 1s;
 }
@@ -105,10 +108,12 @@ button:hover{
 
 /* Image inside message */
 .msg-img{
-  width:160px;
-  border-radius:15px;
-  margin-bottom:20px;
-  box-shadow:0 8px 20px rgba(0,0,0,0.4);
+  width:200px;
+  max-width:90%;
+  border-radius:18px;
+  margin:0 auto 25px auto;
+  display:block;
+  box-shadow:0 10px 25px rgba(0,0,0,0.5);
 }
 </style>
 </head>
@@ -121,8 +126,8 @@ button:hover{
     <div class="circle left"></div>
     <div class="circle right"></div>
   </div>
-  <h2>Happy Hug Day Amma 🩷🫂</h2>
-  <button onclick="nextSlide()"> I love you 💌</button>
+  <h2>Happy Hug Day 🫂</h2>
+  <button onclick="nextSlide()">Tell Me More 💌</button>
 </div>
 
 <!-- Slide 2 -->
@@ -131,13 +136,15 @@ button:hover{
 
     <img src="hug.jpg" class="msg-img">
 
-    Amma i love you sooooooooo much🫂♥️🖤<br><br>
-    Its 
-    Our first hug mumma 28-07-25 🖤 still i can feel it but i can never forget our warm hugs mumma when we peacefully hugged each other for so long time with the love we were craving to express 💝,  you mean the world to me amma , I wanna hug you tightly and tell you how much i love you amma , i really wish to hug you tightly once again. Hugging you never felt enough amma and i wish i could hug you tightly for eternity♾️💕 i wish to take care of you so much amma and i Will keep you so much happy amma that i will never let a tear drop of your eye mumma , i love you so much amma you are my soul and i will always keep you safe in my arms 🫂🖤💗<br><br>
-    Mumma When you hug me, the world feels softer,
+    <p>
+    Your hug feels like home. 🤍<br><br>
+    It’s the kind of comfort that makes
+    everything quiet for a moment.<br><br>
+    When you hug me, the world feels softer,
     safer, and lighter.<br><br>
-    That’s why your hug means everything to me. 💕i love you so much maa ♥️
-    
+    That’s why your hug means everything to me. 💕
+    </p>
+
   </div>
 </div>
 
