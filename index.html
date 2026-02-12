@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hug Day 🫂</title>
+
+<style>
+body{
+  margin:0;
+  overflow:hidden;
+  font-family:'Segoe UI',sans-serif;
+}
+
+/* SLIDES */
+.slide{
+  width:100%;
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+  transition:0.8s ease;
+}
+
+/* First Slide */
+#slide1{
+  background:linear-gradient(to bottom,#fff0f6,#ffe3ec);
+}
+
+/* Second Slide */
+#slide2{
+  background:linear-gradient(to bottom,#1e293b,#0f172a);
+  color:white;
+  position:absolute;
+  top:100%;
+  left:0;
+}
+
+/* Hug Animation */
+.hug{
+  position:relative;
+  width:120px;
+  height:120px;
+}
+
+.circle{
+  position:absolute;
+  width:80px;
+  height:80px;
+  border-radius:50%;
+}
+
+.left{
+  background:#fff;
+  left:0;
+  animation:hugLeft 2s infinite ease-in-out;
+}
+
+.right{
+  background:#ffb3c6;
+  right:0;
+  animation:hugRight 2s infinite ease-in-out;
+}
+
+@keyframes hugLeft{
+  0%,100%{transform:translateX(0);}
+  50%{transform:translateX(15px);}
+}
+
+@keyframes hugRight{
+  0%,100%{transform:translateX(0);}
+  50%{transform:translateX(-15px);}
+}
+
+/* Button */
+button{
+  margin-top:40px;
+  padding:12px 28px;
+  border:none;
+  border-radius:30px;
+  background:#ff4d6d;
+  color:white;
+  font-size:16px;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+button:hover{
+  transform:scale(1.08);
+}
+
+/* Message */
+.message{
+  max-width:320px;
+  text-align:center;
+  font-size:18px;
+  line-height:1.6;
+  opacity:0;
+  animation:fadeText 2s forwards 1s;
+}
+
+@keyframes fadeText{
+  to{opacity:1;}
+}
+
+/* Image inside message */
+.msg-img{
+  width:160px;
+  border-radius:15px;
+  margin-bottom:20px;
+  box-shadow:0 8px 20px rgba(0,0,0,0.4);
+}
+</style>
+</head>
+
+<body>
+
+<!-- Slide 1 -->
+<div class="slide" id="slide1">
+  <div class="hug">
+    <div class="circle left"></div>
+    <div class="circle right"></div>
+  </div>
+  <h2>Happy Hug Day Amma 🩷🫂</h2>
+  <button onclick="nextSlide()"> I love you 💌</button>
+</div>
+
+<!-- Slide 2 -->
+<div class="slide" id="slide2">
+  <div class="message">
+
+    <img src="hug.jpg" class="msg-img">
+
+    Amma i love you sooooooooo much🫂♥️🖤<br><br>
+    Its 
+    Our first hug mumma 28-07-25 🖤 still i can feel it but i can never forget our warm hugs mumma when we peacefully hugged each other for so long time with the love we were craving to express 💝,  you mean the world to me amma , I wanna hug you tightly and tell you how much i love you amma , i really wish to hug you tightly once again. Hugging you never felt enough amma and i wish i could hug you tightly for eternity♾️💕 i wish to take care of you so much amma and i Will keep you so much happy amma that i will never let a tear drop of your eye mumma , i love you so much amma you are my soul and i will always keep you safe in my arms 🫂🖤💗<br><br>
+    Mumma When you hug me, the world feels softer,
+    safer, and lighter.<br><br>
+    That’s why your hug means everything to me. 💕i love you so much maa ♥️
+    
+  </div>
+</div>
+
+<script>
+function nextSlide(){
+  document.getElementById("slide2").style.top="0";
+}
+</script>
+
+</body>
+</html>
